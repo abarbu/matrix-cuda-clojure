@@ -1,13 +1,13 @@
-(ns matrix-cuda-clojure.core)
+(ns matrix-cuda-clojure.core
+ (:require [clojure.core.matrix           :as m]
+           [clojure.core.matrix.operators :as mo]
+           [clojure.core.matrix.protocols :as mp]
+           [clojure.core.matrix.implementations :as imp]
+           [clojure.core.matrix.compliance-tester :as mc]))
 
 (use '[sanity core improvements reader])
 (use 'common-clojure.core)
 (use 'clojure.reflect)
-(require '[clojure.core.matrix           :as m])
-(require '[clojure.core.matrix.operators :as mo])
-(require '[clojure.core.matrix.protocols :as mp])
-(require '[clojure.core.matrix.implementations :as imp])
-(require '[clojure.core.matrix.compliance-tester :as mc])
 
 (import 'jcuda.runtime.JCuda 'jcuda.jcublas.JCublas 'jcuda.jcublas.JCublas2
         'jcuda.Sizeof 'jcuda.runtime.cudaMemcpyKind 'jcuda.jcublas.cublasHandle
