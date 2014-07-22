@@ -7,9 +7,7 @@ This is a work in progress and many parts are still pretty rough.
 You will need CUDA 5.5. Sadly, different versions of CUDA don't seem
 to be ABI compatible.
 
-```clojure
-[com._0xab/matrix-cuda-clojure "0.2.0"]
-```
+[![Clojars Project](http://clojars.org/com._0xab/matrix-cuda-clojure/latest-version.svg)](https://clojars.org/com._0xab/matrix-cuda-clojure)
 
 ## License
 
